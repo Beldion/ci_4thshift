@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 01, 2016 at 07:55 AM
+-- Generation Time: Feb 01, 2016 at 09:34 AM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 7.0.1
 
@@ -91,9 +91,10 @@ CREATE TABLE `user` (
   `lastname` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `birthday` date NOT NULL,
   `date_hired` date NOT NULL,
   `gender` int(11) NOT NULL,
-  `street` varchar(255) NOT NULL,
+  `street address` varchar(255) NOT NULL,
   `city` varchar(50) NOT NULL,
   `zipcode` int(50) NOT NULL,
   `civil status` int(11) NOT NULL,
