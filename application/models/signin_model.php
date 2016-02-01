@@ -3,8 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Signin_model extends CI_Model {
 
-public function signin(/*$email, $password*/){
-/*   	$this -> db -> from('users');
+	public function signin($email, $password){
+	   	$this -> db -> from('user');
    		$this -> db -> where('email', $email);
    		$this -> db -> where('password', $password);
     	
@@ -14,7 +14,7 @@ public function signin(/*$email, $password*/){
 	    	return true;
 	 	} else {
 	    	return false;
-	 	}*/
+	 	}
  	}
 }
 ?>

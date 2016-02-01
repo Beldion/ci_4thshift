@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Signin_controller extends CI_Controller {
+class Admin_home_controller extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,12 +18,16 @@ class Signin_controller extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index(){
-        $this->load->view("signin_view");            
+	public function index()
+	{
+		$this->load->view('admin/dashboard_view');
+		
 	}
 
-	public function signin(){
-		//code for sign in
-		$this->load->view("admin/dashboard_view");
+	public function adduser(){
+		//code for adduser
+		$this->load->view("admin/add_user_view");
     }
 }
+?>
+
