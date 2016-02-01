@@ -13,7 +13,7 @@
 	</head>
 	<body>
 
-		<a href='<?php echo base_url();?>admin_home_controller/adduser'>Add User</a>
+		
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">

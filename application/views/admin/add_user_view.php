@@ -12,14 +12,14 @@
 	</head>
 	<body>
 
-		<a href="<?php echo base_url();?>index.php/admin_home_controller/adduser">Add User</a>
+			
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">Fourth Shift</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li class="active">Add User</a></li>
+					<li class="active"><a href="#">Add User</a></li>
 					<li><a href="#">Modify User</a></li> 
 					<li><a href="#">Remove User</a></li> 
 				</ul>
