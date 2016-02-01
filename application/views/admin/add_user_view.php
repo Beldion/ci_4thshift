@@ -102,67 +102,67 @@
 			<ul >
 			
 					<li id="li_1" >
-		<label class="description" for="element_1">First Name </label>
+		<label class="description" for="firstname">First Name </label>
 		<div>
-			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+			<input id="firstname" name="firstname" class="element text medium" type="text" maxlength="255" value=""/> 
 		</div> 
 		</li>		<li id="li_5" >
-		<label class="description" for="element_5">Last Name </label>
+		<label class="description" for="lastname">Last Name </label>
 		<div>
-			<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
+			<input id="lastname" name="lastname" class="element text medium" type="text" maxlength="255" value=""/> 
 		</div> 
 		</li>		<li id="li_6" >
-		<label class="description" for="element_6">Street Address </label>
+		<label class="description" for="street">Street Address </label>
 		<div>
-			<input id="element_6" name="element_6" class="element text large" type="text" maxlength="255" value=""/> 
+			<input id="street" name="street" class="element text large" type="text" maxlength="255" value=""/> 
 		</div> 
 		</li>		<li id="li_7" >
-		<label class="description" for="element_7">City </label>
+		<label class="description" for="city">City </label>
 		<div>
-			<input id="element_7" name="element_7" class="element text medium" type="text" maxlength="255" value=""/> 
+			<input id="city" name="city" class="element text medium" type="text" maxlength="255" value=""/> 
 		</div> 
 		</li>		<li id="li_8" >
-		<label class="description" for="element_8">Zip Code </label>
+		<label class="description" for="zipcode">Zip Code </label>
 		<div>
-			<input id="element_8" name="element_8" class="element text small" type="text" maxlength="255" value=""/> 
+			<input id="zipcode" name="zipcode" class="element text small" type="text" maxlength="255" value=""/> 
 		</div> 
 		</li>		<li id="li_14" >
-		<label class="description" for="element_14">Gender </label>
+		<label class="description" for="gender">Gender </label>
 		<span>
-			<input id="element_14_1" name="element_14" class="element radio" type="radio" value="1" />
-			<label class="choice" for="element_14_1">Male</label>
-			<input id="element_14_2" name="element_14" class="element radio" type="radio" value="2" />
-			<label class="choice" for="element_14_2">Female</label>
+			<input id="gender" name="gender" class="element radio" type="radio" value="1" />
+			<label class="choice" for="gender">Male</label>
+			<input id="gender" name="gender" class="element radio" type="radio" value="2" />
+			<label class="choice" for="gender">Female</label>
 
 		</span> 
 		</li>		<li id="li_15" >
-		<label class="description" for="element_15">Civil Status </label>
+		<label class="description" for="civil_status">Civil Status </label>
 		<span>
-			<input id="element_15_1" name="element_15" class="element radio" type="radio" value="1" />
-			<label class="choice" for="element_15_1">Single</label>
-			<input id="element_15_2" name="element_15" class="element radio" type="radio" value="2" />
-			<label class="choice" for="element_15_2">Married</label>
-			<input id="element_15_3" name="element_15" class="element radio" type="radio" value="3" />
-			<label class="choice" for="element_15_3">Divorced</label>
-			<input id="element_15_4" name="element_15" class="element radio" type="radio" value="4" />
-			<label class="choice" for="element_15_4">Separated</label>
-			<input id="element_15_5" name="element_15" class="element radio" type="radio" value="5" />
-			<label class="choice" for="element_15_5">Widowed</label>
+			<input id="civil_status" name="civil_status" class="element radio" type="radio" value="1" />
+			<label class="choice" for="civil_status">Single</label>
+			<input id="civil_status" name="civil_status" class="element radio" type="radio" value="2" />
+			<label class="choice" for="civil_status">Married</label>
+			<input id="civil_status" name="civil_status" class="element radio" type="radio" value="3" />
+			<label class="choice" for="civil_status">Divorced</label>
+			<input id="civil_status" name="civil_status" class="element radio" type="radio" value="4" />
+			<label class="choice" for="civil_status">Separated</label>
+			<input id="civil_status" name="civil_status" class="element radio" type="radio" value="5" />
+			<label class="choice" for="civil_status">Widowed</label>
 
 		</span> 
 		</li>		<li id="li_12" >
-		<label class="description" for="element_12">BirthDate </label>
+		<label class="description" for="firstname2">BirthDate </label>
 		<span>
-			<input id="element_12_1" name="element_12_1" class="element text" size="2" maxlength="2" value="" type="text"> /
-			<label for="element_12_1">MM</label>
+			<input id="firstname2_1" name="firstname2_1" class="element text" size="4" maxlength="2" value="" type="text"> /
+			<label for="firstname2_1">MM</label>
 		</span>
 		<span>
-			<input id="element_12_2" name="element_12_2" class="element text" size="2" maxlength="2" value="" type="text"> /
-			<label for="element_12_2">DD</label>
+			<input id="firstname2_2" name="firstname2_2" class="element text" size="4" maxlength="2" value="" type="text"> /
+			<label for="firstname2_2">DD</label>
 		</span>
 		<span>
-	 		<input id="element_12_3" name="element_12_3" class="element text" size="4" maxlength="4" value="" type="text">
-			<label for="element_12_3">YYYY</label>
+	 		<input id="firstname2_3" name="firstname2_3" class="element text" size="8" maxlength="4" value="" type="text">
+			<label for="firstname2_3">YYYY</label>
 		</span>
 	
 		<span id="calendar_12">
@@ -170,8 +170,8 @@
 		</span>
 		<script type="text/javascript">
 			Calendar.setup({
-			inputField	 : "element_12_3",
-			baseField    : "element_12",
+			inputField	 : "firstname2_3",
+			baseField    : "firstname2",
 			displayArea  : "calendar_12",
 			button		 : "cal_img_12",
 			ifFormat	 : "%B %e, %Y",
@@ -180,28 +180,28 @@
 		</script>
 		 
 		</li>		<li id="li_10" >
-		<label class="description" for="element_10">Email </label>
+		<label class="description" for="email">Email </label>
 		<div>
-			<input id="element_10" name="element_10" class="element text large" type="text" maxlength="255" value=""/> 
+			<input id="email" name="email" class="element text large" type="text" maxlength="255" value=""/> 
 		</div> 
 		</li>		<li id="li_11" >
-		<label class="description" for="element_11">Password </label>
+		<label class="description" for="password">Password </label>
 		<div>
-			<input id="element_11" name="element_11" class="element text medium" type="text" maxlength="255" value=""/> 
+			<input id="password" name="password" class="element text medium" type="text" maxlength="255" value=""/> 
 		</div> 
 		</li>		<li id="li_13" >
-		<label class="description" for="element_13">Date Hired </label>
+		<label class="description" for="firstname3">Date Hired </label>
 		<span>
-			<input id="element_13_1" name="element_13_1" class="element text" size="2" maxlength="2" value="" type="text"> /
-			<label for="element_13_1">MM</label>
+			<input id="firstname3_1" name="firstname3_1" class="element text" size="4" maxlength="2" value="" type="text"> /
+			<label for="firstname3_1">MM</label>
 		</span>
 		<span>
-			<input id="element_13_2" name="element_13_2" class="element text" size="2" maxlength="2" value="" type="text"> /
-			<label for="element_13_2">DD</label>
+			<input id="firstname3_2" name="firstname3_2" class="element text" size="4" maxlength="2" value="" type="text"> /
+			<label for="firstname3_2">DD</label>
 		</span>
 		<span>
-	 		<input id="element_13_3" name="element_13_3" class="element text" size="4" maxlength="4" value="" type="text">
-			<label for="element_13_3">YYYY</label>
+	 		<input id="firstname3_3" name="firstname3_3" class="element text" size="8" maxlength="4" value="" type="text">
+			<label for="firstname3_3">YYYY</label>
 		</span>
 	
 		<span id="calendar_13">
@@ -209,8 +209,8 @@
 		</span>
 		<script type="text/javascript">
 			Calendar.setup({
-			inputField	 : "element_13_3",
-			baseField    : "element_13",
+			inputField	 : "firstname3_3",
+			baseField    : "firstname3",
 			displayArea  : "calendar_13",
 			button		 : "cal_img_13",
 			ifFormat	 : "%B %e, %Y",
@@ -219,9 +219,9 @@
 		</script>
 		 
 		</li>		<li id="li_16" >
-		<label class="description" for="element_16">Drop Down </label>
+		<label class="description" for="firstname6">Drop Down </label>
 		<div>
-		<select class="element select medium" id="element_16" name="element_16"> 
+		<select class="element select medium" id="firstname6" name="firstname6"> 
 			<option value="" selected="selected"></option>
 			<option value="1" >Administrator</option>
 			<option value="2" >User</option>
