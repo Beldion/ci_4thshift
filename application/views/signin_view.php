@@ -21,12 +21,13 @@
 
     <div class="container">
 
-      <form class="form-signin">
+      <?php echo form_open('signin_controller/signin'); ?>
       	<center><img src="<?php echo base_url("assets/images/logo.jpg"); ?>"></center><br/>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <button type="button" class="btn btn-primary btn-lg">Sign in</button>
         <a href="<?php echo base_url();?>index.php/signin_controller/signin">Sign in</a>
       </form>
 

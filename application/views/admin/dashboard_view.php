@@ -21,7 +21,7 @@
 				</div>
 				<ul class="nav navbar-nav">
 					<li><a href="<?php echo base_url();?>index.php/admin_home_controller/adduser">Add User</a></li>
-					<li><a href="#">Modify User</a></li> 
+					<li><a href="<?php echo base_url();?>index.php/admin_modifyuser_controller/index">Modify User</a></li> 
 					<li><a href="#">Remove User</a></li> 
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
