@@ -19,7 +19,7 @@
 					<a class="navbar-brand" href="#">Fourth Shift</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="<?php echo base_url();?>index.php/admin_home_controller/adduser" class="active">Add User</a></li>
+					<li><a href="<?php echo base_url();?>index.php/admin_adduser_controller/index">Add User</a></li>
 					<li class="active"><a href="<?php echo base_url();?>index.php/admin_modifyuser_controller/index">Modify User</a></li> 
 					<li><a href="<?php echo base_url();?>index.php/admin_deleteuser_controller/index">Remove User</a></li> 
 				</ul>
@@ -60,7 +60,7 @@
 						<?php echo $value->birthday;?>
 					</td>
 					<td>
-						<?php echo $value->gender;?>
+						<?php echo $value->gender_id;?>
 					</td>
 					<td>
 						<?php echo $value->street_address;?>
@@ -68,10 +68,10 @@
 						<?php echo $value->zipcode;?>
 					</td>
 					<td>
-						<?php echo $value->civil_status;?>
+						<?php echo $value->civil_status_id;?>
 					</td>
 					<td>
-						<?php echo $value->position;?>
+						<?php echo $value->position_id;?>
 					</td>
 					<td>
 						<?php echo anchor('admin_modifyuser_controller/modifyuser'.$value->employee_id, 'Edit')?>

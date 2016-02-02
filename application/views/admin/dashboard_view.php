@@ -20,7 +20,7 @@
 					<a class="navbar-brand" href="#">Fourth Shift</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="<?php echo base_url();?>index.php/admin_home_controller/adduser">Add User</a></li>
+					<li><a href="<?php echo base_url();?>index.php/admin_adduser_controller/index">Add User</a></li>
 					<li><a href="<?php echo base_url();?>index.php/admin_modifyuser_controller/index">Modify User</a></li> 
 					<li><a href="<?php echo base_url();?>index.php/admin_deleteuser_controller/index">Remove User</a></li> 
 				</ul>
@@ -35,10 +35,12 @@
 			<img src="<?php echo base_url("public/img/avatar.jpg"); ?>" class="img-rounded" alt="Avatar" width="304" height="236">  
 			<br />
 			<br />
-			<form class="form-inline">
-				<input type="text" class="form-control" size="50" placeholder="Search Employee" required>
-				<button type="button" class="btn btn-danger">Search</button>
-			</form>
+			<div class="form-inline">
+				<?php echo form_open('admin_searchuser_controller/search_user'); ?>
+					<input id="searchuser" name="searchuser"type="text" class="form-control" size="50" placeholder="Search Employee" required>
+					<button type="submit" name="submit" value="Submit">Search</button>
+				<?php echo form_close(); ?>
+			</div>
 		</div>
 
 		<div id="about" class="container-fluid">

@@ -28,7 +28,7 @@ class Signin_controller extends CI_Controller {
 	}
 
 	public function signin(){
-		 $this->load->model('signin_model');
+		 $this->load->view('admin/dashboard_view');
     }
 }
 ?>

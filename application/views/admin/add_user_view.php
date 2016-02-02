@@ -22,7 +22,7 @@
 					<a class="navbar-brand" href="#">Fourth Shift</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="<?php echo base_url();?>index.php/admin_home_controller/adduser" class="active">Add User</a></li>
+					<li class="active"><a href="<?php echo base_url();?>index.php/admin_adduser_controller/index">Add User</a></li>
 					<li><a href="<?php echo base_url();?>index.php/admin_modifyuser_controller/index">Modify User</a></li> 
 					<li><a href="<?php echo base_url();?>index.php/admin_deleteuser_controller/index">Remove User</a></li> 
 				</ul>
@@ -46,7 +46,7 @@
 					<label for="birthday">Birthday</label><br>
 					<input id="birthday" name="birthday" type="date" class="form-control" aria-describedby="basic-addon2">
 					<br>
-					<label for="Address">Complet e Address</label>
+					<label for="Address">Complete Address</label>
 					<br>
 					<input id="street_address" name="street_address" type="text" class="form-control" placeholder="Street Address" aria-describedby="basic-addon2">
 					<br>

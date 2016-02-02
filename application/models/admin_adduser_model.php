@@ -8,3 +8,4 @@ class Admin_adduser_model extends CI_Model {
 	}
 }
 
+

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head>`
     <title>Login</title>
 
     <!-- Bootstrap CSS -->
@@ -21,14 +21,14 @@
 
     <div class="container">
 
-      <?php echo form_open('signin_controller/signin'); ?>
-      	<center><img src="<?php echo base_url("assets/images/logo.jpg"); ?>"></center><br/>
+      <form class="form-signin">
+        <center><img src="<?php echo base_url("assets/images/logo.jpg"); ?>"></center><br/>
         <label for="inputEmail" class="sr-only">Email address</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <button type="button" class="btn btn-primary btn-lg">Sign in</button>
-        <a href="<?php echo base_url();?>index.php/signin_controller/signin">Sign in</a>
+        <!-- <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="location.href='<?php echo site_url('admin_home_controller/index');?>'">Sign in</button> -->
+        <a href="<?php echo base_url();?>index.php/admin_home_controller">Sign In</a></li>
       </form>
 
     </div>

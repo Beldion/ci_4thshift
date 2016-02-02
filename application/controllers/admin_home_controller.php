@@ -23,11 +23,6 @@ class Admin_home_controller extends CI_Controller {
 		$this->load->view('admin/dashboard_view');
 		
 	}
-
-	public function adduser(){
-		//code for adduser
-		$this->load->view("admin/add_user_view");
-    }
 }
 ?>
 
