@@ -84,7 +84,7 @@
 			  </table>
 			</div>
 		<table>
-		
 		</center>
+		
 	</body>
 </html>
