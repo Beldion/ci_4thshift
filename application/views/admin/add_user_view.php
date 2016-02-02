@@ -10,7 +10,7 @@
 	    <!-- Javascript -->
 	    <link href="<?php echo base_url("assets/js/bootstrap.min.js"); ?>"  rel="stylesheet" />
 
-	    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/view.css');?>" media="all">
+	    <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/view.css');?>" media="all"> -->
 		<script type="text/javascript" src="<?php echo base_url('assets/js/view.js');?>"></script>
 		<script type="text/javascript" src="<?php echo base_url('assets/js/calendar.js');?>"></script>
 
@@ -22,9 +22,9 @@
 					<a class="navbar-brand" href="#">Fourth Shift</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Add User</a></li>
-					<li><a href="#">Modify User</a></li> 
-					<li><a href="#">Remove User</a></li> 
+					<li class="active"><a href="<?php echo base_url();?>index.php/admin_home_controller/adduser" class="active">Add User</a></li>
+					<li><a href="<?php echo base_url();?>index.php/admin_modifyuser_controller/index">Modify User</a></li> 
+					<li><a href="<?php echo base_url();?>index.php/admin_deleteuser_controller/index">Remove User</a></li> 
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
@@ -32,68 +32,60 @@
 			</div>
 		</nav>
 
-<!-- 		<div class="col-sm-5"></div>
-		<div class="col-sm-3">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4">
 			<h2 style="text-align: center;">Add User</h2>
 			<hr />
-			<form>
-				<div class="form-group">
+			<?php echo form_open('admin_adduser_controller/adduser'); ?>
 					<label for="firstname">First Name</label>
-					<input type="text" class="form-control" id="firstname" placeholder="First Name">
-				</div>
-				<div class="form-group">
+					<input id="firstname" name="firstname" type="text" class="form-control" placeholder="First Name">
+					<br>
 					<label for="lastname">Last Name</label>
-					<input type="text" class="form-control" id="lastname" placeholder="Last Name">
-				</div>
-				<div class="form-group">
-					<label for="emailaddress">Email Address</label>
-					<input type="text" class="form-control" placeholder="email address" aria-describedby="basic-addon2">
-				</div>	
-				<div class="form-group">
-					<label for="password">Password</label>
-					<input type="password" class="form-control" id="password1" placeholder="Password">
-				</div>
-				<div class="form-group">
+					<input id="lastname" name="lastname" type="text" class="form-control" placeholder="Last Name">
+					<br>
 					<label for="birthday">Birthday</label><br>
-					<input type="text" class="form-control" placeholder="birthday" aria-describedby="basic-addon2">
-				</div>
-				<div class="form-group">
+					<input id="birthday" name="birthday" type="date" class="form-control" aria-describedby="basic-addon2">
+					<br>
+					<label for="Address">Complet e Address</label>
+					<br>
+					<input id="street_address" name="street_address" type="text" class="form-control" placeholder="Street Address" aria-describedby="basic-addon2">
+					<br>
+					<input id="city" name="city" type="text" class="form-control" placeholder="City" aria-describedby="basic-addon2">
+					<br>
+					<input id="zipcode" name="zipcode" type="text" class="form-control" placeholder="Zipcode" aria-describedby="basic-addon2">
+					<br>
 					<label for="gender">Gender</label><br>
-					<label class="radio-inline"><input type="radio" name="optradio">Male</label>
-					<label class="radio-inline"><input type="radio" name="optradio">Female</label>
-				</div>
-				<div class="form-group">
-					<label for="sel1">Marital Status</label>
-					<select class="form-control" id="sel1">
-					<option>Single</option>
-					<option>Married</option>
-					<option>Windowed</option>
-					<option>Seperated</option>
+						<label class="radio-inline"><input id="gender" name="gender" type="radio" value="1">Male</label>
+						<label class="radio-inline"><input id="gender" name="gender" type="radio" value="2">Female</label>
+					<br><br>
+					<label for="civil_status">Marital Status</label>
+					<select class="form-control" id="civil_status" name="civil_status">
+						<option value="1">Single</option>
+						<option value="2">Married</option>
+						<option value="3">Windowed</option>
+						<option value="4">Seperated</option>
 					</select>
-				</div>
-				<div class="form-group">
-					<label for="gender">Complete Address</label>
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Street Address" aria-describedby="basic-addon2">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="City" aria-describedby="basic-addon2">
-				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Zipcode" aria-describedby="basic-addon2">
-				</div>
-				<div class="form-group">
-					<label for="exampleInputFile">Upload Avatar</label>
-					<input type="file" id="exampleInputFile">
-				</div>
-				<button type="submit" class="btn btn-default">Submit</button>
-				</form>
-				<div class="form-group">
-
-		</div> -->
+					<br>
+					<label for="emailaddress">Email Address</label>
+					<input id="email" name="email" type="text" class="form-control" placeholder="email address" aria-describedby="basic-addon2">
+					<br>
+					<label for="password">Password</label>
+					<input id="password" name="password" type="password" class="form-control" placeholder="Password">
+					<br>
+					<label for="firstname">Date Hired</label>
+					<input id="date_hired" name="date_hired" type="date" class="form-control">
+					<br>
+					<label for="position">User Role</label>
+					<select class="form-control" id="position" name="position">
+						<option value="1">Administrator</option>
+						<option value="2">User</option>
+					</select>
+					<br>				
+					<button type="submit" class="" name="submit" value="Submit">Submit</button>
+			<?php echo form_close(); ?>
+		</div>
 		
-		<div id="form_container">
+		<!-- <div id="form_container">
 			<h1><a>Add User</a></h1>
 			<?php echo form_open('admin_adduser_controller/adduser'); ?>
 				<div class="form_description">
@@ -239,6 +231,6 @@
 					</li>
 				</ul>
 			<?php echo form_close(); ?>
-		</div>
+		</div> -->
 	</body>
 </html>

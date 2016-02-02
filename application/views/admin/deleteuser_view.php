@@ -1,13 +1,12 @@
 <html>
 	<head>
-		<title>Admin - Modify User</title>
+		<title>Admin - Delete User</title>
 
 	    <!-- Bootstrap CSS -->
 	    <link href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>"  rel="stylesheet" />
 
 	    <!-- jQuery -->
 	    <link href="<?php echo base_url("assets/js/jquery.min.js"); ?>"  rel="stylesheet" />
-	    
 	    <!-- Javascript -->
 	    <link href="<?php echo base_url("assets/js/bootstrap.min.js"); ?>"  rel="stylesheet" />
 
@@ -19,9 +18,9 @@
 					<a class="navbar-brand" href="#">Fourth Shift</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="<?php echo base_url();?>index.php/admin_home_controller/adduser" class="active">Add User</a></li>
-					<li class="active"><a href="<?php echo base_url();?>index.php/admin_modifyuser_controller/index">Modify User</a></li> 
-					<li><a href="<?php echo base_url();?>index.php/admin_deleteuser_controller/index">Remove User</a></li> 
+					<li><a href="<?php echo base_url();?>index.php/admin_home_controller/adduser">Add User</a></li>
+					<li><a href="<?php echo base_url();?>index.php/admin_modifyuser_controller/index">Modify User</a></li> 
+					<li class="active"><a href="<?php echo base_url();?>index.php/admin_deleteuser_controller/index">Remove User</a></li> 
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
@@ -74,7 +73,7 @@
 						<?php echo $value->position;?>
 					</td>
 					<td>
-						<?php echo anchor('admin_modifyuser_controller/modifyuser'.$value->employee_id, 'Edit')?>
+						<?php echo anchor('admin_deleteuser_controller/deleteuser'.$value->employee_id, 'Delete')?>
 					</td>
 				</tr>
 				<?php		

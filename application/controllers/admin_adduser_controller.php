@@ -9,18 +9,20 @@ class Admin_adduser_controller extends CI_Controller {
 
 	function adduser() {
 		$this->load->model('admin_adduser_model'); 
+
 		$data = array('firstname'=>$this->input->post('firstname'),
 					  'lastname'=>$this->input->post('lastname'),
-					  'email'=>$this->input->post('email'),
-					  'password'=>$this->input->post('password'),
 					  'birthday'=>$this->input->post('birthday'),
-					  'date_hired'=>$this->input->post('date_hired'),
-					  'gender'=>$this->input->post('gender'),
 					  'street_address'=>$this->input->post('street_address'),
 					  'city'=>$this->input->post('city'),
 					  'zipcode'=>$this->input->post('zipcode'),
+					  'gender'=>$this->input->post('gender'),
 					  'civil_status'=>$this->input->post('civil_status'),
-					  'position'=>$this->input->post('postion'));
+					  'email'=>$this->input->post('email'),
+					  'password'=>$this->input->post('password'),
+					  'date_hired'=>$this->input->post('date_hired'),
+					  'position'=>$this->input->post('position')
+		);
 		if (!empty($data['email']) && !empty($data['password'])) {
 			$this->admin_adduser_model->adduser($data);
 		}
