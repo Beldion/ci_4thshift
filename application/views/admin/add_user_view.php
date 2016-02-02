@@ -54,12 +54,12 @@
 					<br>
 					<input id="zipcode" name="zipcode" type="text" class="form-control" placeholder="Zipcode" aria-describedby="basic-addon2">
 					<br>
-					<label for="gender">Gender</label><br>
-						<label class="radio-inline"><input id="gender" name="gender" type="radio" value="1">Male</label>
-						<label class="radio-inline"><input id="gender" name="gender" type="radio" value="2">Female</label>
+					<label for="gender_id">Gender</label><br>
+						<label class="radio-inline"><input id="gender_id" name="gender_id" type="radio" value="1">Male</label>
+						<label class="radio-inline"><input id="gender_id" name="gender_id" type="radio" value="2">Female</label>
 					<br><br>
-					<label for="civil_status">Marital Status</label>
-					<select class="form-control" id="civil_status" name="civil_status">
+					<label for="civil_status_id">Marital Status</label>
+					<select class="form-control" id="civil_status_id" name="civil_status_id">
 						<option value="1">Single</option>
 						<option value="2">Married</option>
 						<option value="3">Windowed</option>
@@ -75,8 +75,8 @@
 					<label for="firstname">Date Hired</label>
 					<input id="date_hired" name="date_hired" type="date" class="form-control">
 					<br>
-					<label for="position">User Role</label>
-					<select class="form-control" id="position" name="position">
+					<label for="position_id">User Role</label>
+					<select class="form-control" id="position_id" name="position_id">
 						<option value="1">Administrator</option>
 						<option value="2">User</option>
 					</select>
