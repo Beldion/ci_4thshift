@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 01, 2016 at 09:34 AM
+-- Generation Time: Feb 03, 2016 at 03:51 AM
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 7.0.1
 
@@ -93,13 +93,23 @@ CREATE TABLE `user` (
   `password` varchar(255) NOT NULL,
   `birthday` date NOT NULL,
   `date_hired` date NOT NULL,
-  `gender` int(11) NOT NULL,
-  `street address` varchar(255) NOT NULL,
+  `gender_id` int(11) NOT NULL,
+  `street_address` varchar(255) NOT NULL,
   `city` varchar(50) NOT NULL,
   `zipcode` int(50) NOT NULL,
-  `civil status` int(11) NOT NULL,
-  `position` int(50) NOT NULL
+  `civil_status_id` int(11) NOT NULL,
+  `position_id` int(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`employee_id`, `firstname`, `lastname`, `email`, `password`, `birthday`, `date_hired`, `gender_id`, `street_address`, `city`, `zipcode`, `civil_status_id`, `position_id`) VALUES
+(1, 'Admin', 'Tester', 'admin0@admin0.com', 'testing', '1993-03-03', '2016-02-01', 1, 'Testing mode Street', 'Makati City', 2000, 1, 1),
+(2, 'User', 'Tester', 'user0@user0.com', 'testing', '1987-02-27', '2016-02-01', 2, 'Testing street village', 'Manila City', 2001, 2, 2),
+(3, 'first', 'last', 'superman@dc.com', 'asdasdasd', '1998-02-03', '2013-12-31', 1, 'asd', 'gaf', 1920, 3, 1),
+(4, 'asdasd', 'asdas', 'adsdmin0@admin0.com', 'asdas', '2016-02-12', '2016-02-19', 1, 'asda', 'asdas', 123, 1, 1);
 
 --
 -- Indexes for dumped tables
@@ -129,9 +139,9 @@ ALTER TABLE `position`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`employee_id`),
-  ADD KEY `position` (`position`),
-  ADD KEY `civil status` (`civil status`),
-  ADD KEY `gender` (`gender`);
+  ADD KEY `position` (`position_id`),
+  ADD KEY `civil status` (`civil_status_id`),
+  ADD KEY `gender` (`gender_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -156,7 +166,7 @@ ALTER TABLE `position`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `employee_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `employee_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- Constraints for dumped tables
 --
@@ -165,9 +175,9 @@ ALTER TABLE `user`
 -- Constraints for table `user`
 --
 ALTER TABLE `user`
-  ADD CONSTRAINT `user_ibfk_2` FOREIGN KEY (`gender`) REFERENCES `gender` (`gender_id`),
-  ADD CONSTRAINT `user_ibfk_3` FOREIGN KEY (`civil status`) REFERENCES `civil_status` (`cs_id`),
-  ADD CONSTRAINT `user_ibfk_4` FOREIGN KEY (`position`) REFERENCES `position` (`position_id`);
+  ADD CONSTRAINT `user_ibfk_2` FOREIGN KEY (`gender_id`) REFERENCES `gender` (`gender_id`),
+  ADD CONSTRAINT `user_ibfk_3` FOREIGN KEY (`civil_status_id`) REFERENCES `civil_status` (`cs_id`),
+  ADD CONSTRAINT `user_ibfk_4` FOREIGN KEY (`position_id`) REFERENCES `position` (`position_id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
